@@ -1,0 +1,85 @@
+.consult-page h1 {
+  max-width: 20ch;
+}
+
+.consult-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 1.5rem;
+}
+
+.consult-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.consult-card h2 {
+  margin-bottom: 1rem;
+}
+
+.consult-form select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.72rem 0.8rem;
+  font: inherit;
+  color: var(--text);
+  background: #ffffff;
+}
+
+.type-summary {
+  margin: 0.4rem 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.dynamic-fields {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 0.6rem;
+}
+
+.dynamic-fields textarea {
+  min-height: 120px;
+}
+
+.consult-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.consult-note {
+  background: linear-gradient(
+    165deg,
+    var(--surface),
+    color-mix(in srgb, var(--surface-2) 80%, var(--surface-secondary) 20%)
+  );
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+
+.consult-note h3 {
+  margin-bottom: 0.6rem;
+}
+
+.consult-note ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.consult-note p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 960px) {
+  .consult-layout {
+    grid-template-columns: 1fr;
+  }
+}

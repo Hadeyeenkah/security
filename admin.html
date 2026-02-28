@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Sentinel Security</title>
+    <meta
+      name="description"
+      content="Admin dashboard for Sentinel Security consultation requests."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="logo-secure.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="logo-secure.svg" alt="Sentinel Security logo" />
+          <span>SENTINEL SECURITY</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="consultation.html">New Consultation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="admin-page">
+      <section class="section admin-hero">
+        <div class="container">
+          <p class="eyebrow">ADMIN DASHBOARD</p>
+          <h1>Consultation Intake Requests</h1>
+          <p class="lead">Every submission from the consultation form appears here instantly.</p>
+        </div>
+      </section>
+
+      <section id="admin-login" class="section admin-login" aria-label="Admin login">
+        <div class="container login-card">
+          <h2>Admin Sign In</h2>
+          <p class="lead">Enter your admin credentials to access submissions.</p>
+          <form id="login-form" class="consult-form" novalidate>
+            <label for="login-username">Username</label>
+            <input id="login-username" name="username" type="text" autocomplete="username" required />
+
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+
+            <button class="btn btn-primary" type="submit">Sign In</button>
+            <p id="login-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="admin-content" class="section admin-content" aria-label="Admin submissions">
+        <div class="container">
+          <div class="admin-toolbar">
+            <div class="admin-stats">
+              <span id="submission-count">0</span>
+              <span>total requests</span>
+            </div>
+            <div class="admin-actions">
+              <button id="logout" class="btn btn-ghost" type="button">Log Out</button>
+              <button id="export-json" class="btn btn-ghost" type="button">Export JSON</button>
+              <button id="clear-submissions" class="btn btn-primary" type="button">Clear All</button>
+            </div>
+          </div>
+
+          <div id="admin-empty" class="admin-empty">
+            <h2>No submissions yet</h2>
+            <p>Submit a request on the consultation page to see it listed here.</p>
+          </div>
+
+          <div id="submission-list" class="submission-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Sentinel Security, USA. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

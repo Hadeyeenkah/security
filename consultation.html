@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confidential Consultation | Sentinel Security</title>
+    <meta
+      name="description"
+      content="Request a confidential consultation with Sentinel Security. Select the type of security support you need to customize your request."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="logo-secure.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="consultation.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="logo-secure.svg" alt="Sentinel Security logo" />
+          <span>SENTINEL SECURITY</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#why-us">Why Us</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="consult-page">
+      <section class="section consult-hero">
+        <div class="container">
+          <p class="eyebrow">CONFIDENTIAL INTAKE</p>
+          <h1>Tell Us What Protection You Need</h1>
+          <p class="lead">
+            Choose the type of security support you need. The form will tailor itself to your
+            request so our team can respond quickly and accurately.
+          </p>
+        </div>
+      </section>
+
+      <section class="section consult-form-section">
+        <div class="container consult-layout">
+          <div class="consult-card">
+            <h2>Request Details</h2>
+            <form id="security-intake" class="consult-form" novalidate>
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+              <label for="securityType">Security Need</label>
+              <select id="securityType" name="securityType" required>
+                <option value="">Select a security type</option>
+                <option value="executive">Executive & VIP Protection</option>
+                <option value="residential">Residential & Family Security</option>
+                <option value="corporate">Corporate & Facility Security</option>
+                <option value="event">Event & Venue Security</option>
+                <option value="cyber">Cyber, Fraud & Scam Response</option>
+              </select>
+
+              <div id="type-summary" class="type-summary" aria-live="polite"></div>
+
+              <div id="dynamic-fields" class="dynamic-fields"></div>
+
+              <button class="btn btn-primary" type="submit">Submit Consultation</button>
+              <p id="intake-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="consult-side">
+            <div class="consult-note">
+              <h3>What Happens Next</h3>
+              <ul>
+                <li>We review your request within one business day.</li>
+                <li>A security specialist contacts you to confirm scope and timeline.</li>
+                <li>We deliver a tailored protection plan based on your risk profile.</li>
+              </ul>
+            </div>
+            <div class="consult-note">
+              <h3>Urgent Support</h3>
+              <p>
+                If your request is urgent, note it in the form and we will prioritize immediate
+                intake and rapid response coordination.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Sentinel Security, USA. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="consultation.js"></script>
+  </body>
+</html>

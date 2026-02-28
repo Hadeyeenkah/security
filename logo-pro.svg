@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sentinel Security logo">
+  <defs>
+    <linearGradient id="crestBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+  </defs>
+
+  <rect x="6" y="6" width="52" height="52" rx="12" fill="url(#crestBg)" />
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#93c5fd" stroke-width="2" opacity="0.65" />
+  <circle cx="32" cy="32" r="14.5" fill="#0b1220" opacity="0.65" />
+
+  <path d="M32 19.5l9.6 3.8v8.5c0 7-4 11.8-9.6 14.6-5.6-2.8-9.6-7.6-9.6-14.6v-8.5l9.6-3.8z" fill="#e2e8f0" />
+  <path d="M32 23l6.7 2.6v6.2c0 5.2-2.7 8.8-6.7 11-4-2.2-6.7-5.8-6.7-11v-6.2l6.7-2.6z" fill="#1d4ed8" />
+
+  <rect x="29.4" y="26.2" width="5.2" height="13.2" rx="2.2" fill="#ffffff" />
+  <rect x="26.4" y="33.2" width="11.2" height="3" rx="1.5" fill="#ffffff" />
+
+  <rect x="22" y="43" width="20" height="1.8" rx="0.9" fill="#bfdbfe" opacity="0.85" />
+  <rect x="24" y="46" width="16" height="1.8" rx="0.9" fill="#bfdbfe" opacity="0.75" />
+</svg>

@@ -1,0 +1,101 @@
+.admin-page h1 {
+  max-width: 22ch;
+}
+
+.admin-login {
+  padding-top: 1.5rem;
+}
+
+.login-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.6rem;
+  max-width: 520px;
+}
+
+.login-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.admin-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.admin-stats {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.admin-stats span:first-child {
+  font-size: 1.6rem;
+  color: var(--secondary-2);
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.admin-empty {
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  padding: 1.6rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.submission-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.submission-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.submission-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.submission-header h3 {
+  margin: 0;
+}
+
+.submission-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.submission-details {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.submission-details span {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .admin-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
