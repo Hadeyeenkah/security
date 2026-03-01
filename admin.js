@@ -4,8 +4,8 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
-const STORAGE_KEY = "sentinelSecuritySubmissions";
-const AUTH_KEY = "sentinelSecurityAdminAuth";
+const STORAGE_KEY = "halyardSecuritySubmissions";
+const AUTH_KEY = "halyardSecurityAdminAuth";
 const ADMIN_USER = "Admin";
 const ADMIN_PASS = "Aa123123Aa$";
 const listElement = document.getElementById("submission-list");

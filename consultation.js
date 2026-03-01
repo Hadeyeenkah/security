@@ -9,7 +9,7 @@ const typeSelect = document.getElementById("securityType");
 const dynamicFields = document.getElementById("dynamic-fields");
 const statusMessage = document.getElementById("intake-status");
 const typeSummary = document.getElementById("type-summary");
-const STORAGE_KEY = "sentinelSecuritySubmissions";
+const STORAGE_KEY = "halyardSecuritySubmissions";
 
 const fieldTemplates = {
   executive: {
