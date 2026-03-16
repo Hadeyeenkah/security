@@ -99,3 +99,100 @@
     align-items: flex-start;
   }
 }
+
+/* ─── Admin tabs ─────────────────────────────────────────────────────────── */
+
+.admin-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0;
+}
+
+.admin-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  padding: 0.65rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.admin-tab:hover {
+  color: var(--text);
+}
+
+.admin-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.tab-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  padding: 0 0.35rem;
+  background: var(--surface-2);
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.admin-tab.active .tab-count {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+}
+
+/* ─── Job application cards ──────────────────────────────────────────────── */
+
+.job-card {
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--line));
+}
+
+.job-badge {
+  display: inline-block;
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent-2);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: 99px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cover-letter-row {
+  margin-top: 0.4rem;
+}
+
+.cover-letter-row span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.cover-letter-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  background: var(--bg);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+}
+

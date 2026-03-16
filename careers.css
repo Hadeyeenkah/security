@@ -1,0 +1,72 @@
+/* ─── Careers page specific styles ─── */
+
+.careers-page h1 {
+  max-width: 24ch;
+}
+
+.careers-hero {
+  padding-bottom: 0;
+}
+
+/* Role category cards */
+.careers-roles {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.careers-roles-title {
+  margin-bottom: 1.2rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.role-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.role-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.role-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.role-icon {
+  font-size: 1.5rem;
+}
+
+/* Optional label on input */
+.optional-label {
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Confidentiality note accent */
+.careers-urgency-note {
+  border-color: var(--line-secondary);
+  background: linear-gradient(
+    165deg,
+    var(--surface),
+    color-mix(in srgb, var(--surface-secondary) 60%, var(--surface) 40%)
+  );
+}
+
+@media (max-width: 680px) {
+  .roles-grid {
+    grid-template-columns: 1fr;
+  }
+}

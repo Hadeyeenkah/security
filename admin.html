@@ -28,6 +28,7 @@
         <nav class="main-nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="consultation.html">New Consultation</a>
+          <a href="careers.html">Careers</a>
         </nav>
       </div>
     </header>
@@ -36,8 +37,8 @@
       <section class="section admin-hero">
         <div class="container">
           <p class="eyebrow">ADMIN DASHBOARD</p>
-          <h1>Consultation Intake Requests</h1>
-          <p class="lead">Every submission from the consultation form appears here instantly.</p>
+          <h1>Submissions Dashboard</h1>
+          <p class="lead">All consultation requests and job applications appear here instantly.</p>
         </div>
       </section>
 
@@ -60,24 +61,58 @@
 
       <section id="admin-content" class="section admin-content" aria-label="Admin submissions">
         <div class="container">
-          <div class="admin-toolbar">
-            <div class="admin-stats">
-              <span id="submission-count">0</span>
-              <span>total requests</span>
-            </div>
-            <div class="admin-actions">
-              <button id="logout" class="btn btn-ghost" type="button">Log Out</button>
-              <button id="export-json" class="btn btn-ghost" type="button">Export JSON</button>
-              <button id="clear-submissions" class="btn btn-primary" type="button">Clear All</button>
-            </div>
+
+          <!-- Tab navigation -->
+          <div class="admin-tabs" role="tablist">
+            <button id="tab-consultations" class="admin-tab active" role="tab" aria-selected="true" aria-controls="panel-consultations" type="button">
+              Consultation Requests
+              <span class="tab-count" id="consult-tab-count">0</span>
+            </button>
+            <button id="tab-jobs" class="admin-tab" role="tab" aria-selected="false" aria-controls="panel-jobs" type="button">
+              Job Applications
+              <span class="tab-count" id="jobs-tab-count">0</span>
+            </button>
           </div>
 
-          <div id="admin-empty" class="admin-empty">
-            <h2>No submissions yet</h2>
-            <p>Submit a request on the consultation page to see it listed here.</p>
+          <!-- Consultations panel -->
+          <div id="panel-consultations" class="admin-panel" role="tabpanel" aria-labelledby="tab-consultations">
+            <div class="admin-toolbar">
+              <div class="admin-stats">
+                <span id="submission-count">0</span>
+                <span>total requests</span>
+              </div>
+              <div class="admin-actions">
+                <button id="logout" class="btn btn-ghost" type="button">Log Out</button>
+                <button id="export-json" class="btn btn-ghost" type="button">Export JSON</button>
+                <button id="clear-submissions" class="btn btn-primary" type="button">Clear All</button>
+              </div>
+            </div>
+            <div id="admin-empty" class="admin-empty">
+              <h2>No submissions yet</h2>
+              <p>Submit a request on the consultation page to see it listed here.</p>
+            </div>
+            <div id="submission-list" class="submission-grid"></div>
           </div>
 
-          <div id="submission-list" class="submission-grid"></div>
+          <!-- Job Applications panel -->
+          <div id="panel-jobs" class="admin-panel" role="tabpanel" aria-labelledby="tab-jobs" hidden>
+            <div class="admin-toolbar">
+              <div class="admin-stats">
+                <span id="jobs-count">0</span>
+                <span>total applications</span>
+              </div>
+              <div class="admin-actions">
+                <button id="export-jobs-json" class="btn btn-ghost" type="button">Export JSON</button>
+                <button id="clear-jobs" class="btn btn-primary" type="button">Clear All</button>
+              </div>
+            </div>
+            <div id="jobs-empty" class="admin-empty">
+              <h2>No job applications yet</h2>
+              <p>Once someone fills in the careers form their application will appear here.</p>
+            </div>
+            <div id="jobs-list" class="submission-grid"></div>
+          </div>
+
         </div>
       </section>
     </main>

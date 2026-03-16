@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | Halyard Security</title>
+    <meta
+      name="description"
+      content="Join the Halyard Security team. Apply for open positions in executive protection, cyber security, risk intelligence, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="logo-secure.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="consultation.css" />
+    <link rel="stylesheet" href="careers.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="logo-secure.svg" alt="Halyard Security logo" />
+          <span>HALYARD SECURITY</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="careers-nav"
+          aria-label="Toggle menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="careers-nav" class="main-nav" aria-label="Primary">
+          <a href="board-of-directors.html">Board of Directors</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#why-us">Why Us</a>
+          <a href="index.html#testimonials">Testimonials</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="consultation.html">Consultation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="consult-page careers-page">
+
+      <section class="section consult-hero careers-hero">
+        <div class="container">
+          <p class="eyebrow">JOIN OUR TEAM</p>
+          <h1>Build a Career in Elite Security</h1>
+          <p class="lead">
+            Halyard Security is always looking for disciplined, skilled, and mission-driven
+            professionals. Fill in the application form below and our team will review your
+            submission and reach out if your profile matches our current needs.
+          </p>
+          <p class="type-summary">
+            Most openings are remote-first, with selected field and site roles requiring on-site presence.
+          </p>
+        </div>
+      </section>
+
+      <section class="section careers-roles">
+        <div class="container">
+          <h2 class="careers-roles-title">Open Role Categories</h2>
+          <div class="roles-grid">
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">🛡️</span>
+              <h3>Executive Protection</h3>
+              <p>Mostly on-site. Close-protection agents, advance teams, and VIP escort specialists.</p>
+            </div>
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">🔐</span>
+              <h3>Cyber & Fraud Response</h3>
+              <p>Remote-first. Digital investigators, OSINT analysts, and fraud recovery consultants.</p>
+            </div>
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">🏢</span>
+              <h3>Corporate Security</h3>
+              <p>Hybrid. Site security managers, access control officers, and risk assessors.</p>
+            </div>
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">🎯</span>
+              <h3>Risk Intelligence</h3>
+              <p>Remote-first. Threat analysts, intelligence officers, and operational planners.</p>
+            </div>
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">📋</span>
+              <h3>Event Security</h3>
+              <p>Mostly on-site. Event coordinators, crowd management specialists, and venue officers.</p>
+            </div>
+            <div class="role-card">
+              <span class="role-icon" aria-hidden="true">⚙️</span>
+              <h3>Operations & Admin</h3>
+              <p>Remote-first. Operations managers, dispatchers, and administrative support staff.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section consult-form-section" id="apply">
+        <div class="container consult-layout">
+          <div class="consult-card">
+            <h2>Job Application Form</h2>
+            <form id="careers-form" class="consult-form" novalidate>
+
+              <label for="careerFullName">Full Name</label>
+              <input
+                id="careerFullName"
+                name="careerFullName"
+                type="text"
+                autocomplete="name"
+                placeholder="Your full name"
+                required
+              />
+
+              <label for="careerEmail">Email Address</label>
+              <input
+                id="careerEmail"
+                name="careerEmail"
+                type="email"
+                autocomplete="email"
+                placeholder="your@email.com"
+                required
+              />
+
+              <label for="careerPhone">Phone Number</label>
+              <input
+                id="careerPhone"
+                name="careerPhone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="+1 (000) 000-0000"
+                required
+              />
+
+              <label for="careerPosition">Position Applying For</label>
+              <p class="type-summary">Select the exact role you want to apply for.</p>
+              <select id="careerPosition" name="careerPosition" required>
+                <option value="">Select a role category</option>
+                <option value="cyber-fraud">Cyber & Fraud Response Analyst (Remote)</option>
+                <option value="osint-analyst">OSINT / Intelligence Analyst (Remote)</option>
+                <option value="risk-intelligence">Risk Intelligence Specialist (Remote)</option>
+                <option value="operations-manager">Operations Manager (Remote)</option>
+                <option value="admin-support">Administrative Support (Remote)</option>
+                <option value="corporate-security">Corporate Security Manager (Hybrid)</option>
+                <option value="executive-protection">Executive & VIP Protection Agent (On-site)</option>
+                <option value="close-protection">Close Protection Officer (On-site)</option>
+                <option value="site-officer">Site Security Officer (On-site)</option>
+                <option value="event-security">Event Security Coordinator (On-site)</option>
+                <option value="other">Other / General Application</option>
+              </select>
+
+              <label for="careerExperience">Years of Experience</label>
+              <select id="careerExperience" name="careerExperience" required>
+                <option value="">Select experience level</option>
+                <option value="entry">Entry Level (0–1 years)</option>
+                <option value="junior">Junior (1–3 years)</option>
+                <option value="mid">Mid-Level (3–6 years)</option>
+                <option value="senior">Senior (6–10 years)</option>
+                <option value="veteran">Veteran (10+ years)</option>
+              </select>
+
+              <label for="careerLocation">Current Location (City, State)</label>
+              <input
+                id="careerLocation"
+                name="careerLocation"
+                type="text"
+                placeholder="e.g. Charlotte, NC"
+                required
+              />
+
+              <label for="careerLinkedin">LinkedIn or Portfolio URL <span class="optional-label">(optional)</span></label>
+              <input
+                id="careerLinkedin"
+                name="careerLinkedin"
+                type="url"
+                placeholder="https://linkedin.com/in/yourprofile"
+              />
+
+              <label for="careerCv">Upload CV / Resume</label>
+              <input
+                id="careerCv"
+                name="careerCv"
+                type="file"
+                accept=".pdf,.doc,.docx"
+                required
+              />
+              <p class="type-summary">Accepted formats: PDF, DOC, DOCX (max 2MB).</p>
+
+              <label for="careerCover">Cover Letter / Why You Want to Join</label>
+              <textarea
+                id="careerCover"
+                name="careerCover"
+                rows="6"
+                placeholder="Tell us about your background, certifications, and why you want to work with Halyard Security..."
+                required
+              ></textarea>
+
+              <button class="btn btn-primary" type="submit">Submit Application</button>
+              <p id="careers-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="consult-side">
+            <div class="consult-note">
+              <h3>What to Expect</h3>
+              <ul>
+                <li>Applications are reviewed within 3–5 business days.</li>
+                <li>Shortlisted candidates will be contacted by our HR team.</li>
+                <li>Interviews are conducted virtually and in person.</li>
+                <li>Background and security clearance checks are part of our process.</li>
+              </ul>
+            </div>
+            <div class="consult-note">
+              <h3>Requirements</h3>
+              <ul>
+                <li>Must be legally authorized to work in the United States.</li>
+                <li>Relevant training, certifications, or prior service preferred.</li>
+                <li>Physical fitness standards apply for field roles.</li>
+                <li>Strong communication and situational awareness are essential.</li>
+              </ul>
+            </div>
+            <div class="consult-note careers-urgency-note">
+              <h3>Confidentiality</h3>
+              <p>
+                All applications are handled with strict confidentiality. Your information
+                is only used for recruitment purposes and will never be shared with third parties.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Halyard Security, North Carolina. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="careers.js"></script>
+  </body>
+</html>
